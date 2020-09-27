@@ -1,1 +1,46 @@
-oi
+Linguagem: java 
+
+
+Tecnicas utilizada: 
+
+Assim eu pegei de tarde e fui fazendo sem pesquisar sem ver nada so tendando e deu nisso a forma que foi feita e a seguinte:
+
+No leitor arquivo tem o enderoço da pasta onde quer que leia a expressão.
+
+No separador de palavras ele pega a entrada e divide em array onde que primeiro vem um operador e depois os +-*/
+
+Na pasta Espressão eu mando o array separado e fica salvo, utilizada mais como pasta de auxilio para Expressão
+
+Na pasta Expressão e onde a magica acontece.
+
+Ela recebe o array da separador de palabras e intacia uma Espressão.
+
+Ai ela percorer o array procurando se tem  * /, cada vez q ela achar 1 ela vai somar no contador.
+
+Depois se não tiver nada no contador ela sava o primeiro elemento do array e inicia um loop onde salva o elemento n+1 e depois o n.
+
+Ja se tiver coisa no contador.
+
+Ele salva da mesma forma o primeiro elemento e começa a percorer denovo porem agr enquanto o contador nao estiver vazio ele salva o primeiro elemento + - em um outro array (arrumar.espera) e salva o elemento no array de saida do espressão.
+
+Isso acontece ate ele achar * /, quando ele achar ele salva elemnto depois doi * / no array de saida.
+
+Se o contador zera ele coloca a fila no array de saida e voltar a precorer o array de entrada.
+
+
+Gramatica do analisador:
+
+O primeiro elemento não pode ser operador.
+
+Se tiver dois operadores juntos ele reconhecerar apenas o primeiro operador exemplo 5+-+**/-*+/*+**9 ele reconhecerar como 5+9.
+
+Que eu me lembre e isso
+
+
+Dificuldades: 
+
+Foram bastantes primeiramente eu queria que ele dividisse em palavras e depois verificasse a casas impares(operadores) e com vendo a casa da frente que escolhesse oque ele deveria empilhar ou so passar para o array de saida, enfim isso me levou a longas 3 horas de sofrimento com codigo nem executando no final.
+
+Depois eu tentei de outra forma mais nem lembro como foi mais deu ruim tambem e deletei denovo
+
+Ai eu tentei simplemente "reorganizar o array" e deu nisso, ele funciona porem acho que ficou muito simples.
